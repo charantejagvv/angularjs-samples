@@ -1,0 +1,135 @@
+{
+    "form": {
+        "fields": {
+			"Age": {
+                "name": "Age",
+                "type": "Select",
+                "label": "What is your age?",
+                "is_cbq": false,
+                "value": "",
+                "is_hidden": false,
+                "is_required": true,
+                "is_valid": true,
+                "error_message": "",
+                "options": [
+                    {
+                        "label": "<!--1140-->16",
+                        "selected": false,
+                        "value": "16"
+                    },
+                    {
+                        "label": "<!--1150-->17",
+                        "selected": false,
+                        "value": "17"
+                    },
+                    {
+                        "label": "<!--1160-->18",
+                        "selected": false,
+                        "value": "18"
+                    },
+                    {
+                        "label": "<!--1170-->19",
+                        "selected": false,
+                        "value": "19"
+                    },
+                    {
+                        "label": "<!--1180-->20",
+                        "selected": false,
+                        "value": "20"
+                    },
+                    {
+                        "label": "<!--1190-->21",
+                        "selected": false,
+                        "value": "21"
+                    }
+                ]
+            },
+            "EducationLevel": {
+                "name": "EducationLevel",
+                "type": "Select",
+                "label": "What is your highest level of education?",
+                "is_cbq": false,
+                "value": "",
+                "is_hidden": false,
+                "is_required": true,
+                "is_valid": true,
+                "error_message": "",
+                "options": [
+                    {
+                        "label": "<!--1000-->High School Diploma",
+                        "selected": false,
+                        "value": "High School Diploma"
+                    },
+                    {
+                        "label": "<!--1010-->GED",
+                        "selected": false,
+                        "value": "GED"
+                    },
+                    {
+                        "label": "<!--2000-->Not yet completed High School",
+                        "selected": false,
+                        "value": "None"
+                    }
+                ]
+            },
+            "Military": {
+                "name": "Military",
+                "type": "Select",
+                "label": "What is your affiliation with the U.S. Military?",
+                "is_cbq": false,
+                "value": "",
+                "is_hidden": false,
+                "is_required": true,
+                "is_valid": true,
+                "error_message": "",
+                "options": [
+                    {
+                        "label": "<!--1020-->None",
+                        "selected": false,
+                        "value": "None"
+                    },
+                    {
+                        "label": "<!--1030-->Active Duty",
+                        "selected": false,
+                        "value": "Active Duty"
+                    },
+                    {
+                        "label": "<!--1040-->Veteran",
+                        "selected": false,
+                        "value": "Veteran"
+                    }
+                ]
+            },
+            "Citizenship": {
+                "name": "Citizenship",
+                "type": "RadioInTable",
+                "label": "Are you a U.S. citizen?",
+                "is_cbq": false,
+                "value": "",
+                "is_hidden": false,
+                "is_required": true,
+                "is_valid": true,
+                "error_message": "",
+                "options": [
+                    {
+                        "label": "<!--100-->Yes",
+                        "selected": false,
+                        "value": "Yes"
+                    },
+                    {
+                        "label": "<!--110-->No",
+                        "selected": false,
+                        "value": "No"
+                    }
+                ]
+            }
+        },
+        "order": [
+            "EducationLevel",
+            "Age",
+            ["Military", "Citizenship"]
+        ],
+        "is_valid": false,
+        "is_submitted": false
+    }
+}
